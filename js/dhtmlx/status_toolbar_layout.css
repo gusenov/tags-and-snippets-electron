@@ -1,0 +1,36 @@
+/*div.dhxcont_global_layout_area div.dhxcont_sb_container {
+	height: 29px !important;
+}
+div.dhxcont_global_layout_area div.dhxcont_sb_container_layoutcell {
+	height: 26px !important;
+}
+div.dhxcont_global_layout_area div.dhxcont_sb_container div.dhxcont_statusbar {
+	height: 27px !important;
+	background: none !important;
+	border: none !important;
+	padding: 0px !important;
+	line-height: 14px !important;
+}
+div.dhxcont_global_layout_area div.dhxcont_sb_container_layoutcell div.dhxcont_statusbar {
+	height: 26px !important;
+	background: none !important;
+	border: none !important;
+	padding: 0px !important;
+	line-height: 14px !important;
+}*/
+div.dhxcont_global_layout_area div.dhxcont_sb_container_layoutcell div.dhxcont_statusbar .dhxtoolbar_hdrline_ll {
+	display: none !important;
+}
+div.dhxcont_global_layout_area div.dhxcont_sb_container_layoutcell div.dhxcont_statusbar .dhxtoolbar_hdrline_l {
+	left: 0px !important;
+}
+div.dhxcont_global_layout_area div.dhxcont_sb_container_layoutcell div.dhxcont_statusbar .dhxtoolbar_hdrline_rr {
+	display: none !important;
+}
+div.dhxcont_global_layout_area div.dhxcont_sb_container_layoutcell div.dhxcont_statusbar .dhxtoolbar_hdrline_r {
+	right: 0px !important;
+}
+.dhx_toolbar_btn div div {
+	margin: 0px !important;
+	padding: 0px !important;
+}

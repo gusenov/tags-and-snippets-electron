@@ -1,0 +1,14 @@
+/*.dhtmlx_skin_dhx_skyblue div.dhxcont_sb_container {
+	height: 29px !important;
+}
+.dhtmlx_skin_dhx_skyblue div.dhxcont_sb_container div.dhxcont_statusbar {
+	height: 27px !important;
+	background: none !important;
+	border: none !important;
+	padding: 0px !important;
+	line-height: 14px !important;
+}*/
+.dhx_toolbar_btn div div {
+	margin: 0px !important;
+	padding: 0px !important;
+}
