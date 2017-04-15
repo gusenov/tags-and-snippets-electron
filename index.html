@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <head>
+        <title>TBiDE</title>
+        <meta name="description" content="TBiDE is a development tool for tackling software complexity before it defeats your software project." />
+        <meta name="author" content="EGO SUM ABBAS" />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        
+        <!-- Insert this line above script imports (см. http://stackoverflow.com/a/37480521)  -->
+        <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+        
+        <link rel="stylesheet" href="./js/dhtmlx/dhtmlxscheduler.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="./js/dhtmlx/preview_material.css" type="text/css" charset="utf-8">
+<!--        <link rel="stylesheet" href="./js/dhtmlx/preview_skyblue.css" type="text/css" charset="utf-8">-->
+<!--        <link rel="stylesheet" href="./js/dhtmlx/preview_web.css" type="text/css" charset="utf-8">-->
+<!--        <link rel="stylesheet" href="./js/dhtmlx/preview_terrace.css" type="text/css" charset="utf-8">-->
+        <script src="./js/dhtmlx/preview.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/dhtmlx/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
+        <script language="JavaScript" src="./js/dhtmlx/swfobject.js" type="text/javascript"></script>
+        
+        <script src="node_modules/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <!-- Может пригодиться: https://github.com/electron/electron/issues/345 -->
+        
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <!-- Optional theme: -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+        <!-- Latest compiled and minified JavaScript: -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+        <link href="js/select2/dist/css/select2.css" rel="stylesheet" />
+        <script src="js/select2/dist/js/select2.full.js"></script>
+        
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+        
+		<script type="text/javascript" src="js/application/app.js"></script>
+		<script type="text/javascript" src="js/application/storage.js"></script>
+        
+        <!-- Insert this line after script imports (см. http://stackoverflow.com/a/37480521) -->
+        <script>if (window.module) module = window.module;</script>
+    </head>
+    <body>
+        <div id="tags_tabbar" style="width:100vw; height:100vh;"></div>
+        
+        <template id="tags_tab_template">
+            <div id="tags_tab_content" style="padding: 10px;">
+                <div id="tags_select_box">
+                    <label for="id_label_multiple">Click this to select keywords for snippet:<br/>
+                        <select class="js-example-basic-multiple js-states form-control" id="id_label_multiple" multiple="multiple" style="width:98vw;">
+                            <option value="t1">Tag 1</option>
+                            <option value="t2">Tag 2</option>
+                            <option value="t3">Tag 3</option>
+                            <option value="t4">Tag 4</option>
+                            <option value="t5">Tag 5</option>
+                            <option value="t6">Tag 6</option>
+                            <option value="t7">Tag 7</option>
+                            <option value="t8">Tag 8</option>
+                            <option value="t9">Tag 9</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </template>
+        
+        <div id="copy" style="display:none"></div>
+    </body>
 </html>

@@ -1,0 +1,18 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.dhxform_base {
+    margin: 25px;
+}
+
+.dhxform_base .dhxform_base {
+    margin: 20px 15px;
+}
+
+.dhx_chart {
+    z-index: 1;
+}
