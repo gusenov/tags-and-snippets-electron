@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<item id="новый_сниппет"
+		type="buttonSelect"
+		img="../imgs_menu/new.gif"
+		imgdis="../imgs_menu/new_dis.gif"
+		text="Новый сниппет"
+		openAll="true">
+
+			<!-- Список_MIME-типов:
+						https://ru.wikipedia.org/wiki/Список_MIME-типов
+						http://www.freeformatter.com/mime-types-list.html
+			-->
+
+			<item type="button"
+				id="текстовый_файл"
+				text="Текстовый документ"
+				img="../imgs_menu/text_document.gif">
+					<userdata name="тип_данных"><![CDATA[text/plain]]></userdata>
+					<userdata name="расширение_файла"><![CDATA[.txt]]></userdata>
+			</item>
+
+			<item type="button"
+				id="js_код"
+				text="JavaScript-код"
+				img="../imgs_menu/text_document.gif">
+					<userdata name="тип_данных"><![CDATA[application/javascript]]></userdata><!-- http://stackoverflow.com/a/4101763 -->
+					<userdata name="расширение_файла"><![CDATA[.js]]></userdata>
+			</item>
+
+			<item type="button"
+				id="скрипт_языка_php"
+				text="Скрипт языка PHP"
+				img="../imgs_menu/text_document.gif">
+					<userdata name="тип_данных"><![CDATA[text/php]]></userdata>
+					<userdata name="расширение_файла"><![CDATA[.php]]></userdata>
+			</item>
+
+			<item type="button"
+				id="таблица_каскадных_стилей"
+				text="Таблица каскадных стилей (CSS)"
+				img="../imgs_menu/stylesheet.gif">
+					<userdata name="тип_данных"><![CDATA[text/css]]></userdata>
+					<userdata name="расширение_файла"><![CDATA[.css]]></userdata>
+			</item>
+
+			<item type="button"
+				id="sql_файл"
+				text="SQL-файл"
+				img="../imgs_menu/database.gif">
+					<userdata name="тип_данных"><![CDATA[application/sql]]></userdata><!-- http://stackoverflow.com/a/29756658 -->
+					<userdata name="расширение_файла"><![CDATA[.sql]]></userdata>
+			</item>
+
+			<item type="button"
+				id="html_файл"
+				text="HTML-файл"
+				img="../imgs_menu/text_document.gif">
+					<userdata name="тип_данных"><![CDATA[text/html]]></userdata>
+					<userdata name="расширение_файла"><![CDATA[.html]]></userdata>
+			</item>
+
+			<item type="button"
+				id="bash_скрипт"
+				text="Bash-скрипт"
+				img="../imgs_menu/text_document.gif">
+					<userdata name="тип_данных"><![CDATA[application/x-sh]]></userdata>
+					<userdata name="расширение_файла"><![CDATA[.sh]]></userdata>
+			</item>
+
+	</item>
+</toolbar>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<item id="save" type="button" img="../imgs_menu/save.gif" imgdis="../imgs_menu/save_dis.gif"/>
+	<item id="save_as" type="button" img="../imgs_menu/save_as.gif" text="Save As..."
+		  imgdis="../imgs_menu/save_as_dis.gif" enabled="false"/>
+	<item id="sep2" type="separator"/>
+	<item id="undo" type="button" img="../imgs_menu/undo.gif" imgdis="../imgs_menu/undo_dis.gif"/>
+	<item id="redo" type="button" img="../imgs_menu/redo.gif" imgdis="../imgs_menu/redo_dis.gif"/>
+	<item id="sep3" type="separator"/>
+	<item id="cut" type="button" img="../imgs_menu/cut.gif" text="Cut" imgdis="../imgs_menu/cut_dis.gif"
+		  action="doEdit">
+		<userdata name="linka"><![CDATA[http://linkA]]></userdata>
+		<userdata name="linkb"><![CDATA[http://linkB]]></userdata>
+	</item>
+	<item id="copy" type="button" img="../imgs_menu/copy.gif" text="Copy" imgdis="../imgs_menu/copy_dis.gif"
+		  action="doEdit">
+		<userdata name="linkc"><![CDATA[http://linkC]]></userdata>
+	</item>
+	<item id="paste" type="button" img="../imgs_menu/paste.gif" text="Paste" imgdis="../imgs_menu/paste_dis.gif"
+		  action="doEdit"/>
+</toolbar>

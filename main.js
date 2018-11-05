@@ -1,11 +1,7 @@
+/*eslint-env node, es6 */
 /*jslint node: true */
-"use strict";
 
-// Следующие две строки нужны чтобы можно было вести лог.
-var nodeConsole = require('console');
-var myConsole = new nodeConsole.Console(process.stdout, process.stderr);
-
-const {app, BrowserWindow, Menu} = require('electron')
+const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const url = require('url')
 
@@ -13,27 +9,31 @@ const url = require('url')
 // be closed automatically when the JavaScript object is garbage collected.
 let win
 
-function createWindow () {
-  // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 600})
+function createWindow() {
+    // Create the browser window.
+    win = new BrowserWindow({ width: 800, height: 600 })
 
-  // and load the index.html of the app.
-  win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes: true
-  }))
+    win.setMenu(null)  // У приложения будет своё меню.
 
-  // Open the DevTools.
-  win.webContents.openDevTools()
+    // and load the index.html of the app.
+    win.loadURL(url.format({
+        pathname: path.join(__dirname, 'index.html'),
+        protocol: 'file:',
+        slashes: true
+    }))
 
-  // Emitted when the window is closed.
-  win.on('closed', () => {
-    // Dereference the window object, usually you would store windows
-    // in an array if your app supports multi windows, this is the time
-    // when you should delete the corresponding element.
-    win = null
-  })
+    // Open the DevTools.
+    win.webContents.openDevTools()
+
+    // Emitted when the window is closed.
+    win.on('closed', () => {
+        // Dereference the window object, usually you would store windows
+        // in an array if your app supports multi windows, this is the time
+        // when you should delete the corresponding element.
+        win = null
+    })
+    
+    win.maximize()  // Развернуть окно на весь экран.
 }
 
 // This method will be called when Electron has finished
@@ -60,25 +60,3 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-
-// Создание главного меню.
-const template = [{
-    label: 'File',
-    submenu: [{
-        label: 'Open Folder...',
-        click () {
-            // win is your instance of BrowserWindow
-            const electron = require('electron')
-            const dialog = electron.dialog
-            var dir = dialog.showOpenDialog(win, {
-                properties: ['openDirectory']
-            })
-            if (dir && dir.length > 0) {
-                myConsole.log("Folder: " + path.normalize(dir[0]));
-                win.webContents.executeJavaScript("openFolder();");
-            }
-        }
-    }]
-}]
-const menu = Menu.buildFromTemplate(template)
-Menu.setApplicationMenu(menu)

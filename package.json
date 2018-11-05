@@ -1,9 +1,27 @@
 {
-    "name": "tag-based-ide",
-    "description": "Tag-based IDE",
-    "version": "0.1.0",
-    "main": "main.js",
+  "name": "tags-and-snippets",
+  "description": "Tag-based snippet-taking app.",
+  "main": "main.js",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusenov/tags-and-snippets-electron.git"
+  },
+  "homepage": "https://github.com/gusenov/tags-and-snippets-electron#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "jspm": "^0.16.53"
+  },
+  "jspm": {
     "devDependencies": {
-        "electron": "^1.6.2"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
+  },
+  "dependencies": {
+    "big-integer": "^1.6.26",
+    "jquery": "^3.2.1"
+  }
 }
