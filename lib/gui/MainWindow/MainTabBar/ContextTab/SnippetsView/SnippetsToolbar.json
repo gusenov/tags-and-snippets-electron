@@ -1,0 +1,15 @@
+[
+  {
+    "id": "newSnippet",
+    "type": "button",
+    "text": "New Snippet",
+    "img": "../imgs_menu/new.gif",
+    "imgdis": "../imgs_menu/new_dis.gif"
+  }, {
+    "id": "deleteSnippet",
+    "type": "button",
+    "text": "Delete Snippet",
+    "img": "../imgs_menu/close.gif",
+    "imgdis": "../imgs_menu/close_dis.gif"
+  }
+]

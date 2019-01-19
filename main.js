@@ -1,62 +1,54 @@
-/*eslint-env node, es6 */
-/*jslint node: true */
-
 const { app, BrowserWindow } = require('electron')
-const path = require('path')
-const url = require('url')
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
+// Глобальная ссылка для удержания объекта окна, иначе окно автоматически закроется,
+// когда JavaScript-объект утилизируется сборщиком мусора:
 let win
 
-function createWindow() {
-    // Create the browser window.
-    win = new BrowserWindow({ width: 800, height: 600 })
+function createWindow () {
+  // Создать окно браузера:
+  win = new BrowserWindow({ width: 800, height: 600 })
 
-    win.setMenu(null)  // У приложения будет своё меню.
+  // Скрыть главное меню, т.к. у приложения будет своё меню:
+  win.setMenuBarVisibility(false)
 
-    // and load the index.html of the app.
-    win.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
-        protocol: 'file:',
-        slashes: true
-    }))
+  // Загрузить index.html в созданное окно браузера:
+  win.loadFile('index.html')
 
-    // Open the DevTools.
-    win.webContents.openDevTools()
+  // Открыть DevTools:
+  win.webContents.openDevTools()
 
-    // Emitted when the window is closed.
-    win.on('closed', () => {
-        // Dereference the window object, usually you would store windows
-        // in an array if your app supports multi windows, this is the time
-        // when you should delete the corresponding element.
-        win = null
-    })
-    
-    win.maximize()  // Развернуть окно на весь экран.
+  // Обработчик закрытия окна браузера:
+  win.on('closed', () => {
+    // Если приложение поддерживает несколько окон, то нужно хранить их в массиве.
+    // Здесь же нужно удалять соответствующие элементы:
+
+    // Удаление ссылки на объект окна:
+    win = null
+  })
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
+// Этот метод будет вызван после того как Electron завершит инициализацию
+// и будет готов создать окна браузера
+// (некоторые API могут использоваться только после того как произойдёт это событие):
 app.on('ready', createWindow)
 
-// Quit when all windows are closed.
+// Выйти, когда все окна закрылись:
 app.on('window-all-closed', () => {
-  // On macOS it is common for applications and their menu bar
-  // to stay active until the user quits explicitly with Cmd + Q
+  // На macOS приложение и его меню должно оставаться активным
+  // до тех пор пока пользователь не выйдет из приложения явно нажатием Cmd + Q:
   if (process.platform !== 'darwin') {
     app.quit()
   }
 })
 
 app.on('activate', () => {
-    // On macOS it's common to re-create a window in the app when the
-    // dock icon is clicked and there are no other windows open.
-    if (win === null) {
-        createWindow()
-    }
+  // На macOS нужно пересоздавать окно приложения,
+  // когда нажат значок приложения на панели и нет других открытых окон:
+  if (win === null) {
+    createWindow()
+  }
 })
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
+// В этот файл можно включить оставшуюся часть кода приложения,
+// который должен выполняться в единственном главном процессе.
+// Можно также разместить его в отдельных файлах, а здесь запросить.

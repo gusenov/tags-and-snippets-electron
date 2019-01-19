@@ -21,7 +21,7 @@ System.config({
       "assert": "npm:assert@1.4.1"
     },
     "github:jspm/nodelibs-buffer@0.1.1": {
-      "buffer": "npm:buffer@5.0.8"
+      "buffer": "npm:buffer@5.2.1"
     },
     "github:jspm/nodelibs-path@0.1.0": {
       "path-browserify": "npm:path-browserify@0.0.0"
@@ -44,9 +44,9 @@ System.config({
     "npm:babel-runtime@5.8.38": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:buffer@5.0.8": {
-      "base64-js": "npm:base64-js@1.2.1",
-      "ieee754": "npm:ieee754@1.1.8"
+    "npm:buffer@5.2.1": {
+      "base64-js": "npm:base64-js@1.3.0",
+      "ieee754": "npm:ieee754@1.1.12"
     },
     "npm:core-js@1.2.7": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",

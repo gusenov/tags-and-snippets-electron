@@ -1,0 +1,43 @@
+[
+  {
+    "id": "new",
+    "type": "button",
+    "text": "New…",
+    "img": "database-add-icon.png",
+    "imgdis": "database-add-icon.png"
+  },
+  {
+    "id": "open",
+    "type": "button",
+    "text": "Open…",
+    "img": "folder-database-icon.png",
+    "imgdis": "folder-database-icon.png"
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "id": "save",
+    "type": "button",
+    "text": "Save",
+    "img": "database-save-icon.png",
+    "imgdis": "database-save-icon.png"
+  },
+  {
+    "id": "saveAs",
+    "type": "button",
+    "text": "Save As…",
+    "img": "database-save-icon.png",
+    "imgdis": "database-save-icon.png"
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "id": "quit",
+    "type": "button",
+    "text": "Quit",
+    "img": "door-open-icon.png",
+    "imgdis": "door-open-icon.png"
+  }
+]

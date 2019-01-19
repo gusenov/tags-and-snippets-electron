@@ -1,0 +1,23 @@
+[
+  {
+    "id": "createTag",
+    "type": "button",
+    "text": "New Tag",
+    "img": "tag-blue-add-icon.png",
+    "imgdis": "tag-blue-add-icon.png"
+  },
+  {
+    "id": "deleteTag",
+    "type": "button",
+    "text": "Delete Tag",
+    "img": "tag-blue-delete-icon.png",
+    "imgdis": "tag-blue-delete-icon.png"
+  },
+  {
+    "id": "clearSelectionInTagsTree",
+    "type": "button",
+    "text": "Deselect Tag",
+    "img": "cursor-icon.png",
+    "imgdis": "cursor-icon.png"
+  }
+]

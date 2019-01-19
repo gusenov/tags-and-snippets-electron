@@ -1,0 +1,87 @@
+[
+  {
+    "id": "file",
+    "text": "File",
+    "items": [{
+        "id": "new",
+        "text": "New Snippet Store…",
+        "hotkey": "Ctrl+N",
+        "img": "database-add-icon.png",
+        "imgdis": "database-add-icon.png"
+      }, {
+        "id": "open",
+        "text": "Open Snippet Store…",
+        "hotkey": "Ctrl+O",
+        "img": "folder-database-icon.png",
+        "imgdis": "folder-database-icon.png"
+      }, {
+        "type": "separator"
+      }, {
+        "id": "save",
+        "text": "Save",
+        "hotkey": "Ctrl+S",
+        "enabled": true,
+        "img": "database-save-icon.png",
+        "imgdis": "database-save-icon.png"
+      }, {
+        "id": "saveAs",
+        "text": "Save As…",
+        "hotkey": "Ctrl+Shift+S",
+        "enabled": true,
+        "img": "database-save-icon.png",
+        "imgdis": "database-save-icon.png"
+      }, {
+        "type": "separator"
+      }, {
+        "id": "quit",
+        "text": "Quit",
+        "hotkey": "Ctrl+Q",
+        "img": "door-open-icon.png",
+        "imgdis": "door-open-icon.png"
+    }]
+  }, {
+    "id": "context",
+    "text": "Context",
+    "items": [{
+      "id": "newContext",
+      "text": "New Context",
+      "hotkey": "Ctrl+T",
+      "img": "tab-add-icon.png",
+      "imgdis": "tab-add-icon.png"
+    }, {
+      "id": "renameActiveContext",
+      "text": "Rename Active Context",
+      "hotkey": "F2",
+      "img": "tab-edit-icon.png",
+      "imgdis": "tab-edit-icon.png"
+    }, {
+      "id": "cloneActiveContext",
+      "text": "Clone Active Context",
+      "img": "tabbar-icon.png",
+      "imgdis": "tabbar-icon.png"
+    }, {
+      "id": "refreshActiveContext",
+      "text": "Refresh Active Context",
+      "hotkey": "F5",
+      "img": "arrow-refresh-icon.png",
+      "imgdis": "arrow-refresh-icon.png"
+    }, {
+      "id": "closeActiveContext",
+      "text": "Close Active Context",
+      "hotkey": "Ctrl+W",
+      "img": "tab-delete-icon.png",
+      "imgdis": "tab-delete-icon.png"
+    }, {
+      "id": "closeInactiveContexts",
+      "text": "Close Inactive Contexts",
+      "img": "tab-delete-icon.png",
+      "imgdis": "tab-delete-icon.png"
+    }, {
+      "id": "restoreClosedContext",
+      "text": "Restore Closed Context",
+      "hotkey": "Ctrl+Shift+T",
+      "img": "arrow-undo-icon.png",
+      "imgdis": "arrow-undo-icon.png"
+    }]
+  }
+]

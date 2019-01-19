@@ -1,0 +1,39 @@
+[
+  {
+    "id": "undo",
+    "type": "button",
+    "img": "../imgs_menu/redo.gif",
+    "imgdis": "../imgs_menu/redo_dis.gif"
+  }, {
+    "id": "redo",
+    "type": "button",
+    "img": "../imgs_menu/undo.gif",
+    "imgdis": "../imgs_menu/undo_dis.gif"
+  }, {
+    "type": "separator"
+  }, {
+    "id": "cut",
+    "type": "button",
+    "text": "Cut",
+    "img": "../imgs_menu/cut.gif",
+    "imgdis": "../imgs_menu/cut_dis.gif"
+  }, {
+    "id": "copy",
+    "type": "button",
+    "text": "Copy",
+    "img": "../imgs_menu/copy.gif",
+    "imgdis": "../imgs_menu/copy_dis.gif"
+  }, {
+    "id": "paste",
+    "type": "button",
+    "text": "Paste",
+    "img": "../imgs_menu/paste.gif",
+    "imgdis": "../imgs_menu/paste_dis.gif"
+  }, {
+    "type": "separator"
+  }, {
+    "id": "highlight",
+    "title": "Highlight",
+    "type": "buttonInput"
+  }
+]
