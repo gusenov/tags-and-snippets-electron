@@ -1,0 +1,105 @@
+{
+  "selectedContext": 1,
+  "contexts": {
+    "1": {
+      "name": "untitled",
+      "selectedTags": [
+        10
+      ],
+      "selectedSnippet": 3
+    },
+    "2": {
+      "name": "untitled",
+      "selectedTags": [
+        11
+      ],
+      "selectedSnippet": 2
+    }
+  },
+  "tags": {
+    "1": {
+      "name": "Файлы",
+      "bitMask": "1",
+      "parent": -1
+    },
+    "2": {
+      "name": "Чтение текстовых файлов",
+      "bitMask": "2",
+      "parent": 1
+    },
+    "3": {
+      "name": "Запись в текстовые файлы",
+      "bitMask": "4",
+      "parent": 1
+    },
+    "4": {
+      "name": "Строки",
+      "bitMask": "8",
+      "parent": -1
+    },
+    "5": {
+      "name": "Поиск подстроки",
+      "bitMask": "16",
+      "parent": 4
+    },
+    "6": {
+      "name": "Замена подстроки",
+      "bitMask": "64",
+      "parent": 4
+    },
+    "7": {
+      "name": "Языки программирования",
+      "bitMask": "128",
+      "parent": -1
+    },
+    "8": {
+      "name": "JavaScript",
+      "bitMask": "256",
+      "parent": 7
+    },
+    "9": {
+      "name": "Python",
+      "bitMask": "1024",
+      "parent": 7
+    },
+    "10": {
+      "name": "Java",
+      "bitMask": "2048",
+      "parent": 7
+    },
+    "11": {
+      "name": "C",
+      "bitMask": "4096",
+      "parent": 7
+    }
+  },
+  "snippets": {
+    "1": {
+      "bitMaskSum": "2064",
+      "contents": "String input = \"Android gave new life to Java\";\nboolean isFound = input.indexOf(\"Android\") !=-1? true: false; //true\n",
+      "cursorPosition": {
+        "row": 2,
+        "column": 0
+      },
+      "highlight": "java"
+    },
+    "2": {
+      "bitMaskSum": "4100",
+      "contents": "FILE *f = fopen(\"file.txt\", \"w\");\nif (f == NULL)\n{\n    printf(\"Error opening file!\\n\");\n    exit(1);\n}\n\n/* print some text */\nconst char *text = \"Write this to the file\";\nfprintf(f, \"Some text: %s\\n\", text);\n\n/* print integers and floats */\nint i = 1;\nfloat py = 3.1415927;\nfprintf(f, \"Integer: %d, float: %f\\n\", i, py);\n\n/* printing single chatacters */\nchar c = 'A';\nfprintf(f, \"A character: %c\\n\", c);\n\nfclose(f);",
+      "cursorPosition": {
+        "row": 20,
+        "column": 10
+      },
+      "highlight": "c_cpp"
+    },
+    "3": {
+      "bitMaskSum": "2050",
+      "contents": "Path path = Paths.get(\"/myfolder/myfile.ext\");\ntry (BufferedReader reader = Files.newBufferedReader(path)) {\n    // Read from the stream\n    String currentLine = null;\n    while ((currentLine = reader.readLine()) != null)\n        //do your code here\n} catch (IOException e) {\n    // Handle file I/O exception...\n}\n",
+      "cursorPosition": {
+        "row": 9,
+        "column": 0
+      },
+      "highlight": "java"
+    }
+  }
+}
