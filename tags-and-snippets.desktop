@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Tags & Snippets
+Exec=bash -c 'cd "$(dirname %k)" && ./node_modules/.bin/electron .'
+Categories=Application
+Version=1.0
+Type=Application
+Terminal=0
+
